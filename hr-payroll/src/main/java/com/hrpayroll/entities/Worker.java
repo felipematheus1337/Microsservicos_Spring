@@ -27,6 +27,10 @@ public class Worker implements Serializable {
         this.dailyIncome = dailyIncome;
     }
 
+    public Worker(String name,Double dailyIncome) {
+        this.name = name + " teste";
+        this.dailyIncome = dailyIncome;
+    }
 
     public Long getId() {
         return id;

@@ -21,6 +21,11 @@ public class Payment implements Serializable {
         this.days = days;
     }
 
+    public Payment(String name, Double dailyIncome) {
+        this.name = name + " teste";
+        this.dailyIncome = dailyIncome;
+    }
+
     public String getName() {
         return name;
     }

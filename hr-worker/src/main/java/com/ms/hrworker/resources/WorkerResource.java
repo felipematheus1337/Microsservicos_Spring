@@ -36,6 +36,13 @@ public class WorkerResource {
     }
 
 
+    @GetMapping(value = "/buscarnome/{name}")
+    public ResponseEntity<Worker> findByName(@PathVariable String name) {
+        Worker worker = repository.findByName(name);
+        return ResponseEntity.ok(worker);
+    }
+
+
 
 
 }
